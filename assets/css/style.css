@@ -1,0 +1,229 @@
+#briefcase {
+    background: url(../images/clipboard-row1-bgRemoved.png);
+    position: relative;
+    width: 307px;
+    height: 361px;
+    justify-items: flex-end;
+    scale: 0.7;
+    /* animation: briefWiggle 2.25s linear 5s infinite; */
+    animation-fill-mode: forwards;
+    left: 13%;
+    bottom: 37px;
+    
+}
+
+#briefcase:hover {
+    /* background: url(../images/clipboard-row1.png); */
+    /* background-position: 0% 0%;  */
+    width: 307px;
+    height: 361px;
+    
+    /* -webkit-animation: briefOpen 0.9s steps(5) 20;;
+    animation: briefOpenOne 0.01s steps(1) 1;
+    animation-fill-mode: forwards; */
+}
+#buckle {
+    /* outline: 2px dotted yellow; */
+    position: relative;
+    /* outline: 4px dotted red; */
+    top: 145px;
+    right: -66px;
+    height: 100px;
+    width: 200px;
+    background-color: transparent;
+    border: none !important;
+    font-size: 0;
+    cursor: pointer;
+}
+
+#briefcase:has(#buckle:focus) {
+   background: url(../images/clipboard-row1-bgRemoved.png);
+  
+    animation: briefOpenOne 0.05s steps(1) forwards, briefOpenOneTwo 0.4s steps(3) 1.75s forwards;
+    animation-fill-mode: forwards !important; 
+
+    
+}
+
+
+
+@keyframes briefWiggle {
+   0% {
+    transform: scale(1);
+  }
+ 
+  25%{
+    transform: scale(1.08);
+  }
+
+  35%{
+    transform: scale(1.08);
+    transform: rotate(-10deg);
+  }
+
+  45%{
+    transform: scale(1.08);
+    transform: rotate(8deg);
+  }
+
+  50%{
+    transform: scale(1.08);
+    transform: rotate(-10deg);
+  }
+
+  65% {
+    transform: scale(1.08);
+    transform: rotate(8deg);
+  }
+
+  75% {
+    transform: scale(1.08);
+    transform: rotate(-10deg);
+  }
+  85% {
+    transform: scale(1.08);
+    transform: rotate(8deg);
+  }
+  95% {
+    transform: scale(1.08);
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: scale(1.08);
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes delay-animation {
+   0% {
+    
+  }
+ 
+  25%{
+   
+  }
+
+ 
+
+  100% {
+      transform: scale(1);
+      transform: rotate(0deg);
+  }
+}
+
+@keyframes briefOpenOne {
+    from { background-position: 0px; }
+    to { background-position: -307px; }
+}
+
+
+@keyframes briefOpenOneTwo{
+    from { background-position: -307px;}
+    to { background-position: -1229px;}
+}
+
+
+/* new css */
+
+.main-bg{
+    display: flex;
+    max-width: 930px;
+    margin: 2% auto;
+    outline: 2px dotted black;
+    background-color: #0F1647;
+}
+
+
+#fbi-badge{
+   
+    background-position: center;
+    
+    /* height: auto;
+    width: auto; */
+    height: 125px;
+    width: 125px;
+    margin-left: 10px;
+}
+
+.badge-img{
+    object-fit: scale-down;
+    max-width: 200px;
+    /* border: 4px solid white; */
+    background-color: #0F1647;
+}
+
+#top-corner{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    gap: 3px;
+}
+
+#header{
+    height: auto;
+
+    /* font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    color: #EBC121;
+    margin: 0px 0px;
+}
+
+#header sub{
+
+
+    position: relative;
+    left: 4px;
+
+}
+
+
+#header article{
+    
+    font-size: 28px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+
+#header sub{
+    position: relative;
+    left: 4px;
+
+}
+
+#header ul{
+    
+    padding-left: 5%;
+    font-size: 10px;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+
+}
+
+#header sub{
+    height: auto;
+    color: #EBC121;
+    position: relative;
+    left: 4px;
+    margin: 0px 0px;
+}
+
+
+
+#divider{
+    position: relative;
+    transform: rotate(5.88deg);
+    scale: 0.7;
+    width: fit-content;
+    bottom: 82px;
+    
+}
+
+.dvClass{
+    background-repeat: no-repeat;
+    max-width: 33px;
+}
+
+.main-bg ul{
+    display: flex;
+    flex-direction: column;
+}
