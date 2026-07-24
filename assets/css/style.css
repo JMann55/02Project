@@ -1,14 +1,15 @@
 #briefcase {
     background: url(../images/clipboard-row1-bgRemoved.png);
-    position: relative;
-    width: 307px;
-    height: 361px;
-    justify-items: flex-end;
-    scale: 0.7;
-/*    animation: briefWiggle 2.25s linear 5s infinite; */
+    position: absolute;
+    width: 297px;
+    height: 263px;
+    /* background-position: center; */
+    /* justify-items: flex-end; */
+    justify-self: flex-end;
+    scale: 0.5;
     animation-fill-mode: forwards;
-    left: 5%;
-    bottom: 6px;
+    left: 70%;
+    /* bottom: 151px;
 }
 
 #briefcase:hover {
@@ -126,8 +127,10 @@
 
 .main-bg{
     display: flex;
-    max-width: 930px;
+    max-width: 1200px;
+    justify-content: space-between;
     margin: 2% auto;
+    flex-direction: column;
 /*    outline: 2px dotted black;*/
     background-color: #0F1647;
 }
@@ -154,18 +157,27 @@
 #top-corner {
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    flex-wrap: nowrap;
+    margin-top: 10rem;
+    position: relative;
     gap: 3px;
-/*    border: 2px dotted black;*/
-    flex-wrap: wrap;
-    width: 529px;
+    left: 23%;
+    flex-basis: 0%;
+    /* border: 2px dotted black; */
+    /* flex-wrap: wrap; */
+    width: 487px;
 }
 
 #header {
-    height: auto;
+    display: flex;
+    flex: 1 0 56%;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 250px;
     margin: 15px 0px 0px 0px;
-    /* font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    outline: 2px dashed black;
     color: #EBC121;
+
 }
 
 #header sub{
@@ -179,8 +191,9 @@
 
 #header article{
     
-    font-size: 28px;
+    font-size: 18px;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: parent;
     
 
 }
@@ -212,7 +225,7 @@
 
 #divider {
     position: relative;
-    transform: rotate(5.5deg);
+    transform: rotate(3deg);
     scale: 1.25;
     width: fit-content;
     bottom: -8px;
@@ -225,10 +238,14 @@
 }
 
 #bio{
-    align-items: flex-end;
-/*    outline: 2px dotted pink;*/
+     /* align-self: flex-end; */
+    /* outline: 2px dotted pink; */
+    position: relative;
+    justify-self: flex-start;
+    align-self: center;
     height: fit-content;
-    margin-left: 10px;
+    right: 15%;
+    margin-left: 0px;
     
 }
 
@@ -244,13 +261,28 @@ hr.solid-line {
     width: 520px;
 }
 
-#top-corner > article{
-    margin-left: 10px;
+#biod{
+    margin-left: 0px;
     font-size: 27px;
     margin-bottom: 10px;
+    align-self: center;
+    position: relative;
+    right: 24%;
+    /* right: 84%; */
 }
 
 #bio article{
     font-size: 15px;
     line-height: 20px;
+    width: 250px;
+    height: 300px;
+    position: relative;
+    justify-self: flex-start;
+}
+
+#title {
+    width: auto;
+    height: 200px;
+    flex: 2 1 auto;
+
 }
