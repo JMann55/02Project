@@ -9,7 +9,7 @@
     scale: 0.5;
     animation-fill-mode: forwards;
     left: 70%;
-    /* bottom: 151px;
+    /* bottom: 151px; */
 }
 
 #briefcase:hover {
@@ -154,16 +154,22 @@
     background-color: #0F1647;
 }
 
+#top-corner article{
+
+    
+}
+
+
 #top-corner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     margin-top: 10rem;
     position: relative;
     gap: 3px;
     left: 23%;
     flex-basis: 0%;
-    /* border: 2px dotted black; */
+    border: 2px dotted black;
     /* flex-wrap: wrap; */
     width: 487px;
 }
@@ -173,7 +179,7 @@
     flex: 1 0 56%;
     width: 100%;
     flex-wrap: wrap;
-    height: 250px;
+    height: 169px;
     margin: 15px 0px 0px 0px;
     outline: 2px dashed black;
     color: #EBC121;
@@ -189,11 +195,14 @@
 }
 
 
-#header article{
+#T  article{
     
     font-size: 18px;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: parent;
+        border: 3px dotted black;
+    height: fit-content;
+    color: #EBC121;
     
 
 }
