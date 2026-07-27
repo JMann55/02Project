@@ -1,15 +1,18 @@
 #briefcase {
     background: url(../images/clipboard-row1-bgRemoved.png);
     position: absolute;
-    width: 297px;
-    height: 263px;
+    width: 307px;
+    height: 361px;
     /* background-position: center; */
-    /* justify-items: flex-end; */
-    justify-self: flex-end;
-    scale: 0.5;
+    justify-items: center;
+    align-self: flex-end;
+    scale: 0.3;
     animation-fill-mode: forwards;
-    left: 70%;
+    /* left: 70%; */
     /* bottom: 151px; */
+    justify-self: flex-start;
+    top: -20%;
+    right: 40px;
 }
 
 #briefcase:hover {
@@ -167,9 +170,9 @@
     margin-top: 10rem;
     position: relative;
     gap: 3px;
-    left: 23%;
+    left: 11%;
     flex-basis: 0%;
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     /* flex-wrap: wrap; */
     width: 487px;
 }
@@ -181,7 +184,7 @@
     flex-wrap: wrap;
     height: 169px;
     margin: 15px 0px 0px 0px;
-    outline: 2px dashed black;
+    /* outline: 2px dashed black; */
     color: #EBC121;
 
 }
@@ -195,12 +198,12 @@
 }
 
 
-#T  article{
+#top-corner  article{
     
     font-size: 18px;
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     width: parent;
-        border: 3px dotted black;
+    /* border: 3px dotted black; */
     height: fit-content;
     color: #EBC121;
     
@@ -234,16 +237,17 @@
 
 #divider {
     position: relative;
-    transform: rotate(3deg);
-    scale: 1.25;
-    width: fit-content;
-    bottom: -8px;
-    right: 10px;
+    scale: 16.25;
+    transform: skew(231deg);
+    bottom: 118px;
+    rotate: -115deg;
+    align-self: end;
+    left: 16px;
 }
 
 .dvClass {
     background-repeat: no-repeat;
-    max-width: 12px;
+    max-width: 8px;
 }
 
 #bio{
@@ -295,3 +299,27 @@ hr.solid-line {
     flex: 2 1 auto;
 
 }
+
+#suitMan{
+    position: absolute;
+    width: 200px;
+    height: 203px;
+    align-self: center;
+    right: 26%;
+    top: 35%;
+    border-radius: 1deg;
+    opacity: 0.9;
+}
+
+
+#flag{
+    position: absolute;
+    width: 369px;
+    height: 203px;
+    align-self: center;
+    right: 21%;
+    top: 36%;
+    border-radius: 1deg;
+    opacity: 1;
+}
+
