@@ -169,6 +169,7 @@
     flex-wrap: nowrap;
     margin-top: 10rem;
     position: relative;
+    
     gap: 3px;
     left: 11%;
     flex-basis: 0%;
@@ -237,9 +238,10 @@
 
 #divider {
     position: relative;
+    anchor-name: --tp-divider;
     scale: 16.25;
     transform: skew(231deg);
-    bottom: 118px;
+    bottom: 179px;
     rotate: -115deg;
     align-self: end;
     left: 16px;
@@ -302,24 +304,34 @@ hr.solid-line {
 
 #suitMan{
     position: absolute;
+    anchor-name: --macman;
     width: 200px;
     height: 203px;
-    align-self: center;
-    right: 26%;
-    top: 35%;
+    left: 8%;
     border-radius: 1deg;
     opacity: 0.9;
+    z-index: 2;
 }
 
 
 #flag{
     position: absolute;
     width: 369px;
+    position-anchor: --macman;
     height: 203px;
-    align-self: center;
-    right: 21%;
-    top: 36%;
+    
+    position-area: center span-all;
     border-radius: 1deg;
     opacity: 1;
 }
 
+.lft-side{
+    position-anchor: --tp-divider;
+    position-area: left center;
+
+}
+
+.rht-side{
+    position-anchor: --tp-divider;
+    position-area: right center;
+}
