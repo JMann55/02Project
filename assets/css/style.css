@@ -3,16 +3,13 @@
     position: absolute;
     width: 307px;
     height: 361px;
-    /* background-position: center; */
-    justify-items: center;
-    align-self: flex-end;
+    position-anchor: --the-main;
+    position-area: y-start x-end;
+    margin-right: 30px;
+    top: -346%;
     scale: 0.3;
     animation-fill-mode: forwards;
-    /* left: 70%; */
-    /* bottom: 151px; */
-    justify-self: flex-start;
-    top: -20%;
-    right: 40px;
+
 }
 
 #briefcase:hover {
@@ -130,7 +127,8 @@
 
 .main-bg{
     display: flex;
-    max-width: 1200px;
+    max-width: 85%;
+    anchor-name: --the-main;
     justify-content: space-between;
     margin: 2% auto;
     flex-direction: column;
@@ -169,9 +167,8 @@
     flex-wrap: nowrap;
     margin-top: 10rem;
     position: relative;
-    
     gap: 3px;
-    left: 11%;
+    left: 15%;
     flex-basis: 0%;
     /* border: 2px dotted black; */
     /* flex-wrap: wrap; */
@@ -253,13 +250,15 @@
 }
 
 #bio{
-     /* align-self: flex-end; */
+    /* align-self: flex-end; */
     /* outline: 2px dotted pink; */
     position: relative;
+    width: 36%;
     justify-self: flex-start;
-    align-self: center;
+    /* align-self: center; */
     height: fit-content;
-    right: 15%;
+    /* right: 15%; */
+    left: 15%;
     margin-left: 0px;
     
 }
@@ -277,22 +276,22 @@ hr.solid-line {
 }
 
 #biod{
+    position: relative;
     margin-left: 0px;
     font-size: 27px;
     margin-bottom: 10px;
-    align-self: center;
-    position: relative;
-    right: 24%;
+    left: 15%;
+    /* right: 24%; */
     /* right: 84%; */
 }
 
 #bio article{
     font-size: 15px;
     line-height: 20px;
-    width: 250px;
+    /* width: 250px; */
     height: 300px;
-    position: relative;
-    justify-self: flex-start;
+    /* position: relative; */
+
 }
 
 #title {
@@ -307,7 +306,7 @@ hr.solid-line {
     anchor-name: --macman;
     width: 200px;
     height: 203px;
-    left: 8%;
+    left: 12%;
     border-radius: 1deg;
     opacity: 0.9;
     z-index: 2;
@@ -316,10 +315,11 @@ hr.solid-line {
 
 #flag{
     position: absolute;
-    width: 369px;
+    width: 23%;
     position-anchor: --macman;
-    height: 203px;
-    
+    height: 108%;
+    margin-right: 54px;
+    margin-top: 23px;
     position-area: center span-all;
     border-radius: 1deg;
     opacity: 1;
@@ -334,4 +334,80 @@ hr.solid-line {
 .rht-side{
     position-anchor: --tp-divider;
     position-area: right center;
+}
+
+
+@media screen and (max-width: 1500px) {
+  #divider{
+    rotate: -114deg;
+  }
+
+ #briefcase{
+   
+    top: -485%;
+  }
+
+ #flag{
+    width: 29%;
+ }
+
+
+  #top-corner{
+    left: 7%; 
+  }
+
+ #bio{
+    width: 47%;
+    left: 7%;
+ }
+
+ #biod{
+    left: 7%;
+ }
+  
+
+}
+
+
+@media screen and (max-width: 1100px) {
+  .main{
+    
+  }
+
+  
+ 
+ #top-corner{
+   left: 3%;
+  }
+
+ #bio{
+    width: 55%;
+    left: 3%;
+ }
+
+ #biod{
+    left: 3%;
+ }
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+  .main{
+    
+  }
+
+  
+ 
+  .card{
+ 
+
+  }
+
+
+  .imgs{
+    
+
+  }
 }
